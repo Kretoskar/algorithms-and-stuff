@@ -34,6 +34,6 @@ void Sad::Calc_Internal()
     for (int i = 0; i < ilePytan; i++)
     {
         cin >> dzienStart >> dzienKoniec;
-        cout << sumPref[dzienKoniec] - sumPref[dzienStart - 1] << endl;
+        cout << sumPref[dzienKoniec] - sumPref[dzienStart - 1] << '\n';
     }
 }
