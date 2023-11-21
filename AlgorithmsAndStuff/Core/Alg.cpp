@@ -1,10 +1,10 @@
-﻿#include "Alg.h"
-
+﻿
+#include "Alg.h"
 #include <iostream>
 #include <ctime>
 #include <fstream>
 
-void Alg::Calc(const std::string& fileName)
+void Alg::CalcWithFile(const std::string& fileName)
 {
     std::fstream newfile;
     newfile.open("In/" + fileName + ".txt", std::ios::in);
@@ -23,11 +23,23 @@ void Alg::Calc(const std::string& fileName)
         std::cout<<"Can't find text file with name: " << fileName;
     }
     const std::clock_t start = std::clock();
-    Calc_Internal(tp);
+    CalcWithFile_Internal(tp);
     std::cout<<"\nExecution time: " << ( std::clock() - start ) / static_cast<double>(CLOCKS_PER_SEC);
 }
 
-void Alg::Calc_Internal(const std::string& input)
+void Alg::Calc()
+{
+    const std::clock_t start = std::clock();
+    Calc_Internal();
+    std::cout<<"\nExecution time: " << ( std::clock() - start ) / static_cast<double>(CLOCKS_PER_SEC);
+}
+
+void Alg::CalcWithFile_Internal(const std::string& input)
 {
     std::cout << input;
+}
+
+void Alg::Calc_Internal()
+{
+    std::cout << "test";
 }

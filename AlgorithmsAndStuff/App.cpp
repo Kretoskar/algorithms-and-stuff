@@ -1,11 +1,11 @@
-﻿#include <iostream>
+﻿#include "WSB/PrefixSum/Sad.h"
 
-#include "Core/Alg.h"
+using namespace std;
 
 int main()
 {
-    Alg alg;
-    alg.Calc("test");
-    
+    Sad alg;
+    alg.Calc();
+
     return 0;
 }

@@ -5,8 +5,10 @@
 class Alg
 {
 public:
-    void Calc(const std::string& fileName);
+    void CalcWithFile(const std::string& fileName);
+    void Calc();
     
 protected:
-    virtual void Calc_Internal(const std::string& input);
+    virtual void CalcWithFile_Internal(const std::string& input);
+    virtual void Calc_Internal();
 };
