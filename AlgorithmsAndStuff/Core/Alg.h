@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <string>
+#include <vector>
 
 class Alg
 {
@@ -9,6 +10,6 @@ public:
     void Calc();
     
 protected:
-    virtual void CalcWithFile_Internal(const std::string& input);
+    virtual void CalcWithFile_Internal(std::vector<std::string>& input);
     virtual void Calc_Internal();
 };

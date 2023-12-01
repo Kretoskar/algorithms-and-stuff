@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
 
   <ItemGroup>
+    <ClCompile Include="AdventOfCode\2023\Day1.cpp" />
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Core\Alg.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
@@ -210,6 +211,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ClInclude Include="AdventOfCode\2023\Day1.h" />
     <ClInclude Include="Core\Alg.h" />
     <ClInclude Include="WSB\PrefixSum\Sad.h" />
   </ItemGroup>
